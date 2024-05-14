@@ -7,6 +7,9 @@ const Users: CollectionConfig = {
     plural: "Users",
   },
   auth: true,
+  access: {
+    create: () => true,
+  },
   admin: {
     useAsTitle: "username",
   },
@@ -42,19 +45,16 @@ const Users: CollectionConfig = {
       name: "dateofbirth",
       label: "Date of Birth",
       type: "date",
-      required: true,
     },
     {
       name: "province",
       label: "Provinsi",
       type: "text",
-      required: true,
     },
     {
       name: "Regency",
       label: "Kabupaten",
       type: "text",
-      required: true,
     },
     {
       name: "startDate",

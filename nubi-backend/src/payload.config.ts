@@ -32,6 +32,7 @@ export default buildConfig({
       },
     },
   },
+  cors: "*",
   editor: slateEditor({}),
   collections: [
     Admin,

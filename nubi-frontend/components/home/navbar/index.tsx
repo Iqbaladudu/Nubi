@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import LightLogo from "@/public/image/logo/nubiLightLogo.png";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -71,8 +72,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-4">
-        <a className="btn btn-sm hidden lg:flex">Daftar</a>
-        <a className="btn btn-sm">Masuk</a>
+        <Link href="/register" className="btn btn-sm hidden lg:flex">
+          Daftar
+        </Link>
+        <Link href="/login" className="btn btn-sm">
+          Masuk
+        </Link>
       </div>
     </div>
   );
