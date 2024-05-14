@@ -47,7 +47,7 @@ export default function Login() {
         >
           <Image className="w-32" src={darkLogo} alt="logo" />
         </a>
-        <div className="w-full flex flex-col justify-center bg-white rounded-lg shadow border md:mt-0 sm:max-w-lg xl:p-0 bg-gray-800 border-gray-700">
+        <div className="w-full flex flex-col justify-center rounded-lg shadow border md:mt-0 sm:max-w-lg xl:p-0 bg-gray-800 border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">
               Masuk sekarang
