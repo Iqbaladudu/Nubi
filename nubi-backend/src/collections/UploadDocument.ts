@@ -12,7 +12,7 @@ const UploadDocument: CollectionConfig = {
   upload: {
     staticDir: "/assets/documents",
     staticURL: "/assets/documents",
-    mimeTypes: ["application/pdf"],
+    mimeTypes: ["*"],
   },
   fields: [
     {

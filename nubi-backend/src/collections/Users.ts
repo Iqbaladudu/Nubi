@@ -38,7 +38,6 @@ const Users: CollectionConfig = {
       name: "phone",
       label: "Nomor Telepon/WhatsApp",
       type: "number",
-      required: true,
       unique: true,
     },
     {

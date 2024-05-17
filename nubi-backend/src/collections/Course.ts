@@ -36,28 +36,28 @@ const Course: CollectionConfig = {
       required: true,
     },
     {
-      name: "Contents",
+      name: "contents",
       label: "Materi Kursus",
       labels: {
         singular: "Modul",
         plural: "Modul",
       },
+      required: false,
       type: "array",
       admin: {
         initCollapsed: false,
       },
+
       fields: [
         {
           name: "title",
           label: "Judul Materi",
           type: "text",
-          required: true,
         },
         {
           name: "content",
           label: "Konten",
           type: "richText",
-          required: true,
         },
         {
           name: "attachment",

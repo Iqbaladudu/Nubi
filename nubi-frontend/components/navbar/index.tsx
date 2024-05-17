@@ -3,11 +3,24 @@
 import Image from "next/image";
 import LightLogo from "@/public/image/logo/nubiLightLogo.png";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => setIsDrawerOpen(false), [pathname]);
+
   return (
     <div className="drawer z-50">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <input
+        id="my-drawer-3"
+        type="checkbox"
+        className="drawer-toggle"
+        onChange={() => setIsDrawerOpen(!isDrawerOpen)}
+        checked={isDrawerOpen}
+      />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
         <div className="w-full navbar bg-base-100">
@@ -85,6 +98,9 @@ const Navbar = () => {
           {/* Sidebar content here */}
           <li>
             <Image src={LightLogo} className=" w-32" alt="Nubi Academy" />
+          </li>
+          <li>
+            <Link href={"/courses"}>Belajar</Link>
           </li>
           <li>
             <Link href={"/login"}>Masuk</Link>
