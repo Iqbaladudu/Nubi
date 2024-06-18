@@ -5,6 +5,7 @@ import LightLogo from "@/public/image/logo/nubiLightLogo.png";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { categoryData } from "@/app/constant";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
   useEffect(() => setIsDrawerOpen(false), [pathname]);
 
   return (
-    <div className="drawer z-50">
+    <div className="drawer z-50 shadow-md">
       <input
         id="my-drawer-3"
         type="checkbox"
@@ -52,18 +53,17 @@ const Navbar = () => {
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
               <li>
-                <Link href={"/courses"}>Belajar</Link>
+                <Link href={"/"}>Home</Link>
               </li>
               <li>
                 <details>
                   <summary>Kategori</summary>
                   <ul className="menu menu-sm bg-base-200 w-56 rounded-box">
-                    <li>
-                      <a>Pemrograman</a>
-                    </li>
-                    <li>
-                      <a>Artificial Intelligence</a>
-                    </li>
+                    {categoryData.map(({ title, value }, index) => (
+                      <li key={index}>
+                        <Link href={`/courses?category=${value}`}>{title}</Link>
+                      </li>
+                    ))}
                   </ul>
                 </details>
               </li>

@@ -41,12 +41,11 @@ export default function Login() {
   return (
     <section className="bg-gray-900 h-screen flex justify-center items-center">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <a
-          href="#"
-          className="flex items-center mb-6 text-2xl font-semibold text-white"
-        >
-          <Image className="w-32" src={darkLogo} alt="logo" />
-        </a>
+        <Image
+          className="w-32 flex items-center mb-6 text-2xl font-semibold text-white"
+          src={darkLogo}
+          alt="logo"
+        />
         <div className="w-full flex flex-col justify-center rounded-lg shadow border md:mt-0 sm:max-w-lg xl:p-0 bg-gray-800 border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">
@@ -86,12 +85,12 @@ export default function Login() {
                   <span className="label-text text-white">
                     Ingat kata sandi
                   </span>
-                  <input
-                    type="checkbox"
-                    className="toggle"
-                    {...register("rememberPassword")}
-                  />
                 </label>
+                <input
+                  type="checkbox"
+                  className="toggle"
+                  {...register("rememberPassword")}
+                />
               </div>
               <div className="flex justify-center">
                 <button className="btn btn-white btn-sm  w-24" type="submit">

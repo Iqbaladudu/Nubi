@@ -9,12 +9,27 @@ const Course: CollectionConfig = {
   admin: {
     useAsTitle: "name",
   },
+  access: {
+    read: ({ req: { user } }) => {
+      return false;
+    },
+    admin: () => true,
+  },
   fields: [
     {
       name: "name",
       label: "Nama Kursus",
       type: "text",
       required: true,
+      access: {
+        read: ({ req: { user } }) => {
+          if (!user) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+      },
     },
     {
       name: "description",
