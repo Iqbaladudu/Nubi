@@ -4,6 +4,7 @@ import "./globals.css";
 import ReactQueryWrapper from "@/components/reactQueryWrapper";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ReactQueryWrapper>
           <Navbar />
-          <div>{children}</div>
+          <div>
+            <Suspense>{children}</Suspense>
+          </div>
           <Footer />
         </ReactQueryWrapper>
       </body>
