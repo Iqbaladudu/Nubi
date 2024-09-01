@@ -51,7 +51,7 @@ const Users: CollectionConfig = {
       type: "text",
     },
     {
-      name: "Regency",
+      name: "regency",
       label: "Kabupaten",
       type: "text",
     },
