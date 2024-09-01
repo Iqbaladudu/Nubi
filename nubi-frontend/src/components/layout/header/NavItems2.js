@@ -12,7 +12,7 @@ const NavItems2 = () => {
       id: 1,
       name: "Home",
       path: "/",
-      dropdown: <DropdownHome />,
+      dropdown: null,
       isRelative: true,
     },
     {
@@ -26,14 +26,14 @@ const NavItems2 = () => {
       id: 3,
       name: "Blog",
       path: "/dashboards/instructor-dashboard",
-      dropdown: <DropdownBlog />,
+      dropdown: null,
       isRelative: true,
     },
     {
       id: 4,
       name: "Courses",
       path: "/courses",
-      dropdown: <DropdownCourses2 />,
+      dropdown: null,
       isRelative: true,
     },
 
@@ -41,7 +41,7 @@ const NavItems2 = () => {
       id: 5,
       name: "Pages",
       path: "/about",
-      dropdown: <DropdownPages2 />,
+      dropdown: null,
       isRelative: true,
     },
     {

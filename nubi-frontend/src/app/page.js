@@ -1,4 +1,4 @@
-import Home1 from "@/components/layout/main/Home1";
+import Home1 from "@/components/layout/main/Home5";
 import ThemeController from "@/components/shared/others/ThemeController";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 

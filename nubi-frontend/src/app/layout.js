@@ -25,8 +25,8 @@ export const hind = Hind({
 });
 
 export const metadata = {
-  title: "Home 1 | Edurock - Education LMS Template",
-  description: "Home description",
+  title: "Nubi Academy | Belajar Skill Baru Setiap Hari",
+  description: "Nubi Academy adalah platform pengembangan softskill ",
 };
 
 export default function RootLayout({ children }) {

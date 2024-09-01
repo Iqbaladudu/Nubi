@@ -48,7 +48,7 @@ const Navbar = () => {
             {/* navbar left */}
             <NavbarLogo />
             {/* Main menu */}
-            {isHome2Dark ? <NavItems2 /> : <NavItems />}
+            {isHome2Dark ? <NavItems2 /> : <NavItems2 />}
 
             {/* navbar right */}
             <NavbarRight isHome2Dark={isHome2Dark} />
