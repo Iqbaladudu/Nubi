@@ -17,11 +17,11 @@ const Hero5 = () => {
         {/* animated icons */}
 
         <div>
-          <BookImage />
+          {/* <BookImage />
           <GlobImage />
           <BalbImage />
           <AppleImage />
-          <TriangleImage />
+          <TriangleImage /> */}
         </div>
 
         <div className="container 2xl:container-secondary-md relative">
@@ -55,10 +55,6 @@ const Hero5 = () => {
                   className="w-full rounded-lg2"
                   placeholder="blur"
                 />
-
-                <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
-                  <PopupVideo />
-                </div>
               </div>
             </div>
           </div>

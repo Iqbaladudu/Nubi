@@ -1,5 +1,11 @@
+"use client";
 import Subject from "@/components/shared/popular-subjects/Subject";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
 
 const SubjectMarque = () => {
   const subjects = [
@@ -341,15 +347,44 @@ const SubjectMarque = () => {
   ];
   return (
     <div data-aos="fade-up">
-      <div className="container-fluid py-10 px-30px 2xl:px-50px 3xl:px-150px bg-borderColor dark:bg-borderColor-dark overflow-x-hidden">
-        <div className="flex animate-marquee play-state gap-5">
+      <div className="container-fluid py-10 px-30px 2xl:px-50px 3xl:px-150px bg-borderColor dark:bg-borderColor-dark">
+        {/* <div className="flex border gap-5"> */}
+        <Swiper
+          spaceBetween={50}
+          centeredSlides={true}
+          slidesPerView={1}
+          autoplay={{
+            delay: 500,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 5,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          }}
+          loop={true}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
           {/* subject cards  */}
           {subjects.map((subject, idx) => (
-            <div className="w-250px flex-shrink-0" key={idx}>
-              <Subject subject={subject} type="primary" />
-            </div>
+            <SwiperSlide>
+              <div className="w-250px flex-shrink-0 mx-auto" key={idx}>
+                <Subject subject={subject} type="primary" />
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
+        {/* </div> */}
       </div>
     </div>
   );

@@ -1,6 +1,4 @@
 "use client";
-import { usePathname } from "next/navigation";
-import NavItems from "./NavItems";
 import NavbarLogo from "./NavbarLogo";
 import NavbarRight from "./NavbarRight";
 import NavItems2 from "./NavItems2";

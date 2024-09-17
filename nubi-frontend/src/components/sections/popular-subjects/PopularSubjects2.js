@@ -513,21 +513,20 @@ const PopularSubjects2 = () => {
     <section className=" py-20">
       <div className="container">
         {/* Subject Header  */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-30px mb-65px">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 mb-65px">
           <div className="lg:col-star-1 lg:col-span-4">
-            <SectionName data-aos="fade-up">Course List</SectionName>
+            {/* <SectionName data-aos="fade-up">K</SectionName> */}
             <h3
               className="text-3xl md:text-size-35 2xl:text-size-38 3xl:text-size-42 leading-10 md:leading-45px 2xl:leading-50px 3xl:leading-2xl font-bold text-blackColor dark:text-blackColor-dark"
               data-aos="fade-up"
             >
-              Populer{" "}
+              Kategori{" "}
               <span className="relative after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-4 after:z-[-1]">
-                Subjects
+                Populer
               </span>
             </h3>
           </div>
-
-          <div className="lg:col-star-5 lg:col-span-5">
+          {/* <div className="lg:col-star-5 lg:col-span-5">
             <p
               className="text-sm md:text-base text-contentColor dark:text-contentColor-dark mb-10px 2xl:mb-50px 2xl:pl-50px"
               data-aos="fade-up"
@@ -535,8 +534,8 @@ const PopularSubjects2 = () => {
               Forging relationships between multi to national governments and
               global NGOs begins.
             </p>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className="lg:col-star-10 lg:col-span-3 flex lg:justify-end"
             data-aos="fade-up"
           >
@@ -545,9 +544,8 @@ const PopularSubjects2 = () => {
                 All Catagories
               </ButtonPrimary>
             </div>
-          </div>
+          </div> */}
         </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-30px">
           {/* subject cards  */}
           {subjects.map((subject, idx) => (

@@ -6,7 +6,7 @@ const NavbarLogo = () => {
   return (
     <div className="lg:col-start-1 lg:col-span-2">
       <Link href="/" className="w-logo-sm lg:w-logo-lg ">
-        <Image prioriy="fasle" src={logo1} alt="logo" className="w-full py-2" />
+        <Image prioriy="false" src={logo1} alt="logo" className="w-9/12 py-2" />
       </Link>
     </div>
   );

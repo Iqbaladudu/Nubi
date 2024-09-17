@@ -12,10 +12,12 @@ const CoursesFilter = () => {
           <div className="flex gap-15px lg:gap-30px flex-wrap lg:flex-nowrap items-center ">
             {/* courses Left */}
             <div className="basis-full lg:basis-[500px]" data-aos="fade-up">
-              <SectionName> Course List</SectionName>
+              <SectionName>
+                Jelajahi kursus online yang kamu butuhkan
+              </SectionName>
               <HeadingPrimaryXl>
-                Perfect Online <br className="hidden lg:block" /> Course Your
-                Carrer
+                Mulai Belajar <br className="hidden lg:block" /> Terus
+                Berkembang
               </HeadingPrimaryXl>
             </div>
             {/* courses right */}

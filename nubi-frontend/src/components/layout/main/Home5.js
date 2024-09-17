@@ -15,7 +15,7 @@ const Home5 = () => {
     <>
       <Hero5 />
       <SubjectMarque />
-      <FeatureCourses title="Featured Courses" />
+      <FeatureCourses title="Kursus Pilihan" />
       <About3 />
       <PopularSubjects2 />
       <CoursesFilter />

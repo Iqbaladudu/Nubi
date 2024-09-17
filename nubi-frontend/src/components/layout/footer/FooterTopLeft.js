@@ -15,7 +15,7 @@ const FooterTopLeft = () => {
       ) : (
         <>
           <h4 className="text-4xl md:text-size-25 lg:text-size-40 font-bold text-whiteColor leading-50px md:leading-10 lg:leading-16">
-            Still You Need Our{" "}
+            Berlangganan sekarang juga{" "}
             <span className="text-primaryColor">Support</span> ?
           </h4>
           <p className="text-whiteColor text-opacity-65">
