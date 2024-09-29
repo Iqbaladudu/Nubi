@@ -377,7 +377,7 @@ const SubjectMarque = () => {
         >
           {/* subject cards  */}
           {subjects.map((subject, idx) => (
-            <SwiperSlide>
+            <SwiperSlide key={idx}>
               <div className="w-250px flex-shrink-0 mx-auto" key={idx}>
                 <Subject subject={subject} type="primary" />
               </div>
